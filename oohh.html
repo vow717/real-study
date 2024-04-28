@@ -1,11 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <p>
+      emmet语句:table[border='1']>tr>th[style="color:red"]{数据item$}*3^^tr>td{cost$}*3
+    </p>
+    <p>结果如下:</p>
+    <table border="1">
+      <tr>
+        <th style="color: red">数据item1</th>
+        <th style="color: red">数据item2</th>
+        <th style="color: red">数据item3</th>
+      </tr>
+      <tr>
+        <td>cost1</td>
+        <td>cost2</td>
+        <td>cost3</td>
+      </tr>
+    </table>
+
+    <p>
+      emmet语句：img[src='/goodimg.jpg'alt='好看的图片'width='300'height='300']
+    </p>
+    <p>结果如下:</p>
+    <img src="/goodimg.jpg" alt="好看的图片" width="300" height="300" />
+
+    <p>无序列表:ul[style="list-style-type:circle"]>li{item$}*3</p>
+    <ul style="list-style-type: circle">
+      <li>item1</li>
+      <li>item2</li>
+      <li>item3</li>
+    </ul>
+
+    <p>有序列表:ol[type='A']>li{item$}*3</p>
+    <ol type="A">
+      <li>item1</li>
+      <li>item2</li>
+      <li>item3</li>
+    </ol>
+
+    <p>创建导航：ul>(li>a[href])*4</p>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="about">About</a></li>
+    </ul>
+
+    <li>
+      <span class="label label-info" style="color: green">开启/关闭</span>
+      通知功能
+    </li>
+  </body>
 </html>

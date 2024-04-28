@@ -7,5 +7,6 @@
   "git.enableSmartCommit": true,
   "workbench.colorTheme": "Default Light+",
   "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": false
+  "explorer.confirmDragAndDrop": false,
+  "liveServer.settings.port": 5501
 }
