@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+p {
+  font-size: 20px;
+  background-color: silver;
+}
+#id1 {
+  color: beige;
+  font-size: 40px;
+}
+
+h1.btn-success {
+  background-color: chartreuse;
+  font-size: 54px;
+}
+.all-can-use {
+  background-color: rosybrown;
+  height: 30px;
+}

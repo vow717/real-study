@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+#rem1 {
+  font-size: 30px;
+  border: 1px solid black;
+  /*
+border：这是一个CSS属性，用于设置元素的边框。
+1px：这是边框的宽度，1像素。
+solid：这是边框的样式，指定为实线。
+black：这是边框的颜色，指定为黑色。
+*/
+}
+#rem2 {
+  font-size: 0.5rem;
+}
+
+#father {
+  width: 80%;
+  font-size: 30px;
+  border: 1px solid black;
+}
+#son {
+  width: 50%;
+  font-size: 80%;
+  border: 1px solid black;
+}
