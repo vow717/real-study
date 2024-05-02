@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+body.body1 {
+  background: #ffffff url("") no-repeat scroll top;
+}
+
+/*object-fit属性只能是用来调整img和video的*/
+img.radius {
+  border-radius: 30%;
+  width: 250px;
+  height: 250px;
+}
+
+img.thumb {
+  width: 100px;
+  height: 160px;
+}
+img.thumb1 {
+  object-fit: contain;
+}
+img.thumb2 {
+  object-fit: cover;
+}
+
+/*
+#aaa: 这是 CSS 中的 ID 选择器，用于选择具有特定 id 属性的元素。在这里，#aaa 是选择器，它选择了具有 id 为 aaa 的元素。
+height: 200px;: 这行 CSS 规则设置了 id 为 #aaa 的元素的高度为 200 像素。
+border: 1px solid blue;: 这行 CSS 规则设置了 id 为 #aaa 的元素的边框为 1 像素的实线边框，并且边框的颜色为蓝色。
+#aaa img: 这是一个组合选择器，它选择了 id 为 #aaa 的元素内的所有 img 元素。
+max-height: 100%;: 这行 CSS 规则设置了 id 为 #aaa 的元素内的所有 img 元素的最大高度为其父元素的高度的百分之百。这样做可以确保图片在不超出其父元素高度的情况下，保持其原始宽高比进行缩放。
+*/
+#aaa {
+  height: 200px;
+  border: 1px solid blue;
+}
+#aaa img {
+  max-height: 100%;
+}
+
+p.indent3 {
+  text-indent: 2em;
+}
+
+/*
+按照优先级顺序选择字体。如果操作系统上安装了 "Times New Roman" 字体，浏览器将首选它；如果没有，则选择系统默认的 "Times" 字体；如果连系统默认字体都没有，则选择段落元素的默认字体族。
+*/
+p.serif {
+  font-family: "Times New Roman", Times, serif;
+}
