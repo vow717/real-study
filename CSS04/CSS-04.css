@@ -47,3 +47,7 @@ p.indent3 {
 p.serif {
   font-family: "Times New Roman", Times, serif;
 }
+
+p.rgba {
+  background: rgba(100, 120, 180, 0.3);
+}
