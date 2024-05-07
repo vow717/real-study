@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+div.container p {
+  background-color: yellow;
+}
+
+div.container2 > p {
+  background-color: blue;
+}
+
+div.container3 + p {
+  background-color: sandybrown;
+}
+
+div.container4 > div.fff ~ p {
+  background-color: antiquewhite;
+}
+
+div.pseudo {
+  background-color: green;
+  width: 300px;
+  padding: 25px;
+}
+div.pseudo:hover {
+  background-color: yellow;
+}
+a[target="_blank"] {
+  background-color: tan;
+}
