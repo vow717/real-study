@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+#table1 {
+  border-collapse: collapse;
+  width: 50%;
+}
+#table1 th,
+#table1 td {
+  border: 1px solid red;
+}
+
+#table2 {
+  border-collapse: collapse;
+  width: 60%;
+}
+#table2 tr {
+  border-bottom: 1px solid red;
+  text-align: center;
+}
+#table2 tbody tr:hover {
+  border-bottom: 1px solid red;
+  text-align: center;
+  background-color: gainsboro;
+}
+#table2 thead tr {
+  border-bottom: 1px solid red;
+  text-align: center;
+  background-color: goldenrod;
+}
+#table2 th,
+#table2 td {
+  padding: 6px;
+}

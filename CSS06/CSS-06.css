@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+#nav li {
+  display: inline;
+}
+#nav li a {
+  text-decoration: none;
+}
+h1.hidden {
+  visibility: hidden;
+}
+
+span.label {
+  display: inline-block;
+  height: 25px;
+  padding: 15px;
+  border: 2px solid red;
+}
+#a-peseudo a:link {
+  color: black;
+}
+#a-peseudo a:visited {
+  color: green;
+}
+#a-peseudo a:hover {
+  color: yellow;
+}
+#a-peseudo a:active {
+  color: blue;
+}
+
+#inline-block a {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: chocolate;
+  color: antiquewhite;
+  border: 1px solid chocolate;
+  margin: 5px;
+  text-decoration: none;
+  border-radius: 10%;
+}
+#inline-block a:hover {
+  background-color: gold;
+}
