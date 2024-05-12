@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+div.div1 {
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  transition: width 1.5s, height 1.5s;
+  transition-property: background-color, width, height, color, font-size;
+  transition-duration: 1.5s, 1.5s, 1.5s, 1.5s, 1.5s;
+  background-color: aliceblue;
+}
+div.div1:hover {
+  background-color: #ffe4c4;
+  font-size: 30px;
+  color: blueviolet;
+  width: 250px;
+  height: 250px;
+}
+
+div.div2 {
+  position: relative;
+  left: 400px;
+  top: 200px;
+  background-color: #ffe4c4;
+  width: 300px;
+  height: 300px;
+  transition: transform 1s, background-color 1s;
+}
+div.div2:hover {
+  background-color: gold;
+  transform: scale(2, 2) translate(30px, 30px) rotate(20deg);
+}
+
+div.div3 {
+  display: inline-block;
+  position: relative;
+}
+
+div.div3 .downmune {
+  display: none;
+  position: absolute;
+  background-color: red;
+}
+
+div.div3:hover .downmune {
+  display: block;
+}
