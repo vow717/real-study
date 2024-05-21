@@ -1,13 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>vow的个人网页</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        background-color: #444;
+      }
+      nav a {
+        color: #fff;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+      }
+      nav a:hover {
+        background-color: #555;
+      }
+      section {
+        padding: 20px;
+      }
+      .gallery img {
+        width: 100%;
+        height: auto;
+      }
+      .contact-form {
+        max-width: 600px;
+        margin: auto;
+      }
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+      }
+      .contact-form button {
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+      }
+    </style>
   </head>
   <body>
-    <h1>你好！</h1>
-    <h2>这里是新的世界</h2>
-    <h3>这里专门对你说声你好！</h3>
+    <header>
+      <h1>欢迎来到 vow 的个人网页</h1>
+    </header>
+
+    <nav>
+      <a href="#home">主页</a>
+      <a href="#about">关于我</a>
+      <a href="#blog">博客</a>
+      <a href="#contact">联系我</a>
+    </nav>
+
+    <section id="home">
+      <h2>欢迎词</h2>
+      <p>
+        欢迎来到我的个人网页！我是vow，一名软件工程师。我对《原神》非常感兴趣，喜欢探索和分享我的见解。
+      </p>
+
+      <h2>最新动态</h2>
+      <p>这里是最新的动态信息。</p>
+
+      <h2>推荐内容</h2>
+      <p>推荐一些我喜欢的内容。</p>
+    </section>
+
+    <section id="about">
+      <h2>关于我</h2>
+      <img src="your-photo-url.jpg" alt="vow的照片" />
+      <p>这是我的照片和一些简单介绍。</p>
+    </section>
+
+    <section id="blog">
+      <h2>博客</h2>
+      <p>
+        请访问我的<a href="https://csdn.net" target="_blank">CSDN博客</a
+        >，获取更多技术文章和分享。
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>联系我</h2>
+      <p>QQ: 2744858035</p>
+      <p>在下面留言，我会尽快回复你。</p>
+
+      <div class="contact-form">
+        <form action="your-form-handler-url" method="post">
+          <input type="text" name="name" placeholder="你的名字" required />
+          <input type="email" name="email" placeholder="你的邮箱" required />
+          <textarea name="message" placeholder="你的留言" required></textarea>
+          <button type="submit">提交</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>图片画廊</h2>
+      <div class="gallery">
+        <img src="your-image-url1.jpg" alt="Image 1" />
+        <img src="your-image-url2.jpg" alt="Image 2" />
+        <img src="your-image-url3.jpg" alt="Image 3" />
+      </div>
+    </section>
+
+    <section id="video">
+      <h2>视频嵌入</h2>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/your-video-id"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </section>
   </body>
 </html>

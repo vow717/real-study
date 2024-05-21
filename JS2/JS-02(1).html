@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    style{ .nav{ border:1px solid red; } }
+  </head>
+  <body>
+    <button onclick="visit()">
+      点击查看你的姓名，账号和密码（请确保你身边没有人）
+    </button>
+    <p id="name">姓名：</p>
+    <p id="zh">账号：</p>
+    <p id="mm">密码：</p>
+    <hr />
+    <button onclick="getday()">一个星期</button>
+    <p id="textday"></p>
+    <hr />
+    <button type="button" onclick="showAlert()">点击弹出警告</button>
+    <button type="button" onclick="showAlert2()">点击在旁边弹出警告</button>
+    <h1 onclick="changeh1(this)">点击这个标题，会变</h1>
+    <hr />
+    <form id="register">
+      <label>
+        <input
+          type="checkbox"
+          onchange="checkAgree(this)"
+        />已阅读并同意条款 </label
+      ><br />
+      <button type="submit" disabled>提交</button>
+    </form>
+    <hr />
+    <div class="nav">
+      <button type="button" onclick="changecolor()">
+        点击随机变换下面字的颜色
+      </button>
+      <p>1233211234567</p>
+      <p>abccbaabcdefg</p>
+    </div>
+  </body>
+  <script>
+    let person = {
+      name: "vow",
+      zh: 10101010,
+      mm: "123abc",
+    };
+    const Name = document.getElementById("name");
+    const Zh = document.getElementById("zh");
+    const Mm = document.getElementById("mm");
+    function visit() {
+      Name.textContent = `姓名：${person.name}`;
+      Zh.textContent = `姓名：${person.zh}`;
+      Mm.textContent = `姓名：${person.mm}`;
+    }
+
+    let text = "";
+    function getday() {
+      for (let i = 1; i <= 7; i++) text += `今天是星期${i}<br>`;
+      document.getElementById("textday").innerHTML = text;
+    }
+    let showAlert = () => {
+      window.alert(5 + 6);
+    };
+    let showAlert2 = () => {
+      document.write(5 + 6);
+    };
+
+    let changeh1 = (h) => {
+      h.innerHTML = "OOOOOOOHHH！";
+    };
+
+    let checkAgree = (c) => {
+      let submitButton = document.querySelector(
+        "#register button[type=submit]"
+      );
+      submitButton.disabled = !c.checked;
+    };
+
+    let changecolor = () => {
+      let ps = document.querySelectorAll("div.nav>p");
+      let r = Math.round(Math.random() * 255);
+      let g = Math.round(Math.random() * 255);
+      let b = Math.round(Math.random() * 255);
+      ps.forEach((ps1) => {
+        ps1.style.color = `rgb(${r},${g},${b})`;
+      });
+    };
+  </script>
+</html>
