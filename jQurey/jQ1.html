@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 80px;
+        height: 80px;
+        display: none;
+        background-color: red;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <button onclick="show()">fade by JS</button><br />
+    <button>fade by JQuery</button><br />
+    <div></div>
+    <br />
+    <div></div>
+    <p>当点击按钮时，显示两个div</p>
+  </body>
+  <script>
+    function show() {
+      var divs = document.querySelectorAll("div");
+      [].forEach.call(divs, function (e) {
+        e.style.opacity = 0;
+        e.style.display = "block";
+        var num = 0;
+        var step = 0.1;
+        var st = setInterval(function () {
+          num = num + step;
+          e.style.opacity = num;
+          if (num >= 1) {
+            clearInterval(st);
+          }
+        }, 100);
+      });
+    }
+
+    $(function () {
+      $("button").click(function () {
+        $("div").fadeIn(1000);
+      });
+    });
+  </script>
+</html>

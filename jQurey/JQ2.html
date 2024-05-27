@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My jQuery Page</title>
+    <!-- 引入 jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- 你页面的内容 -->
+    <h1>Hello, jQuery!</h1>
+    <div class="aabb" style="background-color: violet">你好</div>
+    <p id="p2">哦哦哈哈哈</p>
+    <p id="p3">saasaa</p>
+    <p id="text">1233211234567</p>
+    <button id="gettext">看文本</button>
+    <button id="confirm">确定判断</button>
+    <button id="prompt">确定判断+输入</button>
+    <script>
+      // 使用 jQuery 的示例代码
+      $(document).ready(function () {
+        $("h1").click(function () {
+          $(this).text("Hello, World!");
+        });
+      });
+      $(function () {
+        $(".aabb").click(function () {
+          $(this).hide();
+        });
+      });
+      $("#p2").hover(
+        function () {
+          $(this).text("you entered p");
+        },
+        function () {
+          $(this).text("Bye! Yout now leave p2!");
+        }
+      );
+      $("#p3").on({
+        click: function(){
+          $(this).text("click");
+        },
+        mouseenter: function() {
+          $(this).text("mouseenter");
+        },
+        mouseleave: function () {
+          $(this).text("mouseleave");
+        }
+      });
+      $(function(){
+      $("#gettext").click(()=>{
+        alert($("#text").text());
+      });
+    $("#confirm").click(()=>{
+        let result=confirm("你确定？");
+        if(result){}
+        else{
+    }
+
+    })
+    $("#prompt").click(()=>{
+        let userInput = prompt("请输入您的姓名：", "John Doe");
+if (userInput !== null) {
+    // 用户点击了确认，并且输入了内容
+    alert("您输入的姓名是：" + userInput);
+} else {
+    // 用户点击了取消
+}
+    })
+    });
+    </script>
+  </body>
+</html>

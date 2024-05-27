@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+<div style="display: block;">
+    <div style="display: inline;">
+    <button id="fadein">fadein</button>
+    <button id="fadeout">fadeout</button>
+    <button id="fadetoggle">fadetoggle</button>
+    <button id="fadeto">fadeto</button>
+    </div>
+    <div id="fade1" style="width: 80px;height: 80px;background-color: whitesmoke;display: none;"></div>
+    <br>
+    <div id="fade2" style="width: 80px;height: 80px;background-color: red;display: none;"></div>
+    <br>
+    <div id="fade3" style="width: 80px;height: 80px;background-color: blue;display: none;"></div>
+
+    <hr>
+
+    <button id="slideDown">展开</button>
+    <button id="slideUp">关闭</button>
+    <button id="slideUpAndDown">展开后又自动关闭</button>
+    <div id="slide1" style="width: 600px;height: 100px;border: 1px solid red; text-align: center;display: none;">Hello World</div>
+</div>
+    <script>
+        $(function(){
+            $("#fadein").click(()=>{
+                $("#fade1").fadeIn();
+                $("#fade2").fadeIn("slow");
+                $("#fade3").fadeIn(3000);
+            });
+            $("#fadeout").click(()=>{
+                $("#fade1").fadeOut();
+                $("#fade2").fadeOut("slow");
+                $("#fade3").fadeOut(3000);
+            });
+            $("#fadetoggle").click(()=>{
+                $("#fade1").fadeToggle();
+                $("#fade2").fadeToggle("slow");
+                $("#fade3").fadeToggle(3000);
+            });
+            $("#fadeto").click(()=>{
+                $("#fade1").fadeTo("slow",0.1);
+                $("#fade2").fadeTo("slow",0.5);
+                $("#fade3").fadeTo("slow",0.9);
+            })
+
+            $("#slideDown").click(()=>{
+                $("#slide1").slideDown("slow");
+            })
+            $("#slideUp").click(()=>{
+                $("#slide1").slideUp("slow");
+            })
+            $("#slideUpAndDown").click(()=>{
+                $("#slide1").slideDown("slow").slideUp("slow");
+            })
+        });
+    </script>
+</body>
+</html>
